@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestFilesCorrectlyListsInMemoryFiles(t *testing.T) {
+func TestFilesFindsGoFiles(t *testing.T) {
 	t.Parallel()
 	fsys := fstest.MapFS{
 		"file.go":                {},
