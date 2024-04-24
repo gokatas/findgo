@@ -12,8 +12,10 @@ func TestFilesFindsGoFiles(t *testing.T) {
 	t.Parallel()
 	fsys := fstest.MapFS{
 		"file.go":                {},
+		"file.pl":                {},
 		"subfolder/subfolder.go": {},
 		"subfolder2/another.go":  {},
+		"subfolder2/another.pl":  {},
 		"subfolder2/file.go":     {},
 	}
 	want := []string{
