@@ -1,10 +1,10 @@
 package findgo_test
 
 import (
-	"findgo"
 	"testing"
 	"testing/fstest"
 
+	"github.com/gokatas/findgo"
 	"github.com/google/go-cmp/cmp"
 )
 

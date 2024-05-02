@@ -1,4 +1,4 @@
-module findgo
+module github.com/gokatas/findgo
 
 go 1.22.2
 
