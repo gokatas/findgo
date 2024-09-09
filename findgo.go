@@ -8,12 +8,11 @@ import (
 )
 
 func Files(fsys fs.FS) (paths []string) {
-	fs.WalkDir(fsys, ".",
-		func(path string, d fs.DirEntry, err error) error {
-			if filepath.Ext(path) == ".go" {
-				paths = append(paths, path)
-			}
-			return nil
-		})
+	fs.WalkDir(fsys, ".", func(path string, d fs.DirEntry, err error) error {
+		if filepath.Ext(path) == ".go" {
+			paths = append(paths, path)
+		}
+		return nil
+	})
 	return paths
 }
